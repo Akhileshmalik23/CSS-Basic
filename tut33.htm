@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after the pseudoselector</title>
+    <link rel="stylesheet" href="https://source.unsplash.com/collection/190727/720x600/?fitness,gym">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+            
+            background-image: url('https://source.unsplash.com/collection/190727/720x600/?fitness,gym') ;
+            
+        }
+        header::before {
+            /* position: absolute; */
+            /* width: 100%;
+            height: 100%; */
+            /* z-index: -1; */
+
+        }
+        .navigation{
+            display: flex   ;
+        }
+        section{
+            /* border: 3px solid red; */
+            padding: 3px 33px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+section::before{
+    content: "this is a content";
+}
+        li{
+            list-style-type: none;
+            padding: 33px 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navebar">
+        <ul class="navigation">
+
+                <li class="item">home</li>
+                <li class="item">about us</li>
+                <li class="item">sarvice</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h1>
+            welcome to coding world
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores officia sequi earum quas sint obcaecati similique dolore quibusdam. Quod eaque velit voluptatibus error earum, tempore aut quo harum? Neque, eveniet! Recusandae et officiis sit velit, quis molestias quae impedit odit.</p>
+    </section>
+    <hr>
+    
+</body>
+</html>

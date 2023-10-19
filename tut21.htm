@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 4px solid black;
+            width: 1000px;
+            background-color: rgb(221, 221, 231);
+            margin: auto;
+            /* text-align: right; */
+
+        }
+
+        .item {
+            border: 3px solid gray;
+            padding: 15px 5px;
+            background-color: rgb(249, 241, 241);
+            border-radius: 5px;
+            margin: 20px;
+
+
+        }
+
+        #fruit {
+            float: left;
+            width: 46%;
+
+        }
+
+        #computer {
+            float: right;
+            width: 45%;
+
+        }
+
+        #stationary {
+            clear: both;
+            ;
+            width: 50%;
+
+        }
+
+        #glasses {}
+
+        p,
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+
+            <div id="fruit" class="item">
+                <h3>Fruit</h3>
+                <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                    quisquam facilis beatae cumque! Maiores mollitia at perspiciatis iusto quam nihil fugiat quidem.
+                    Nemo tempore culpa unde aspernatur. In, quis qui?</p>
+            </div>
+            <div id="computer" class="item">
+                <h3>computer</h3>
+                <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                    quisquam facilis beatae cumque! Maiores mollitia at perspiciatis iusto quam nihil fugiat quidem.
+                    Nemo tempore culpa unde aspernatur. In, quis qui?</p>
+            </div>
+            <div id="stationary" class="item">
+                <h3>stationary</h3>
+                <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                    quisquam facilis beatae cumque! Maiores mollitia at perspiciatis iusto quam nihil fugiat quidem.
+                    Nemo tempore culpa unde aspernatur. In, quis qui?</p>
+            </div>
+
+            <div id="glasses" class="item">
+                <h3>stationary</h3>
+                <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                    quisquam facilis beatae cumque! Maiores mollitia at perspiciatis iusto quam nihil fugiat quidem.
+                    Nemo tempore culpa unde aspernatur. In, quis qui?</p>
+            </div>
+        </div>
+</body>
+
+</html>
